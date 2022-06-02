@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
- *Printf
- *main the start
- *Return should be 0
+ * main - Entry point for program uses printf to display txt
+ * Return: Always (0) for return func
  */
 int main(void)
 {
