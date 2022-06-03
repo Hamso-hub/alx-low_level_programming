@@ -6,8 +6,10 @@
 
 
 int main(void)
+
 {
 	int r = 0;
+
 	for (r = 0; r < 10; r++)
 	{
 		printf("%d", r);
