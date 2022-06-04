@@ -8,14 +8,14 @@ int main(void)
 {
 	int df;
 
-	int l;
+	char l;
 
 	for (df = 48; df < 58; df++)
 	{
 		putchar(df);
 	}
 
-	for (l = 65; l < 71; l++)
+	for (l = 'a'; l <= 'f'; l++)
 	{
 		putchar(l);
 	}
