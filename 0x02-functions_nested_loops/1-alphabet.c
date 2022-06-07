@@ -1,18 +1,21 @@
 #include "main.h"
 
 /**
- * main - prints alphabets
+ * print_alphabet - prints all alphabets an a new line is added
  * Return: set to zero
  * print_alphabet - prints alphabets
  */
 
-void print_alphabets(void)
+void print_alphabet(void)
 {
 	char xar;
 
-	for (xar = 'a'; xar <= 'z'; xar++)
+	xar = 'a';
+	while (xar <= 'z')
 	{
 		_putchar(xar);
+		xar++;
+
 	}
 
 	_putchar('\n');
