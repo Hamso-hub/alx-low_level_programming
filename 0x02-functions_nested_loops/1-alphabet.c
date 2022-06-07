@@ -3,9 +3,10 @@
 /**
  * main - prints alphabets
  * Return: set to zero
+ * print_alphabet - prints alphabets
  */
 
-int main(void)
+void print_alphabet(void)
 {
 	char xar;
 
@@ -15,6 +16,6 @@ int main(void)
 	}
 
 	putchar('\n');
-	return (0);
-
+print_alphabet();
 }
+
