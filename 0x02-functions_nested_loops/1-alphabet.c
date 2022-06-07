@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - prints alphabets
@@ -6,7 +6,7 @@
  * print_alphabet - prints alphabets
  */
 
-void print_alphabet(void)
+void print_alphabets(void)
 {
 	char xar;
 
@@ -16,6 +16,4 @@ void print_alphabet(void)
 	}
 
 	putchar('\n');
-print_alphabet();
 }
-
