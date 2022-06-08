@@ -6,10 +6,9 @@
  * Return: set fot last digit
  */
 int print_last_digit(int g)
-
 {
-	if (g % 10 > 0)
-	{
-		return ((g % 10));
-	}
+	_putchar('0' + _abs(n % 10));
+
+	return (_abs(n % 10));
+
 }
