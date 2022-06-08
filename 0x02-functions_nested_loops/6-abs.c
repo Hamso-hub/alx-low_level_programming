@@ -1,15 +1,15 @@
 #include "main.h"
 /**
  * _abs - checks absolute value
- * @int: the number to be checkes
+ * @i: the number to be checkes
  * Return: absolute value of int
  */
 
-int _abs(int)
+int _abs(int i)
 {
-	if (int >= 0)
+	if (i >= 0)
 	{
-		return (int);
+		return (i);
 	}
-	return (-int);
+	return (-i);
 }
