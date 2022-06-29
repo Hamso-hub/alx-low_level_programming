@@ -2,51 +2,38 @@
 #include <stdlib.h>
 
 /**
- * main - make a change
- * @argc: argc
- * @argv: argv
- * Return: set to 0
+ * main - prints the minimum number of coins for an amount of money
+ * @argc: should count two arguments
+ * @argv: arguments given should be program name and amount of money
+ * Return: least number of coins, 0 if negative amount, 1 if amount not given
  */
 
 int main(int argc, char *argv[])
 {
-	int money, coins = 0;
+	int n, coins = 0;
 
 	if (argc != 2)
+	{
 		printf("Error\n");
 		return (1);
-	else if (argc == 2)
-	{
-		money = atoi(argv[1]);
-		while (money > 0)
-		{
-			if (money >= 25)
-			{
-				coins++;
-				money -= 25;
-			}
-			else if (money >= 10)
-			{
-				money -= 10;
-				coins++;
-			}
-			else if (money >= 5)
-			{
-				money -= 5;
-				coins++;
-			}
-			else if (money >= 2)
-			{
-				money -= 2;
-				coins++;
-			}
-			else if ((money - 1) >= 0)
-			{
-				money -= 2;
-				coins++;
-			}
-		}
 	}
+	if (argv[1][0] == '-')
+	{
+		printf("0\n");
+		return (0);
+	}
+	n = atoi(argv[1]);
+
+	coins += n / 25;
+	n = n % 25;
+	coins += n / 10;
+	n = n % 10;
+	coins += n / 5;
+	n = n % 5;
+	coins += n / 2;
+	n = n % 2;
+	coins += n / 1;
+
 	printf("%d\n", coins);
 	return (0);
 }
